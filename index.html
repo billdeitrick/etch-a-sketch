@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magic Etch-A-Sketch</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="controls">
+                <div class="icon-button toggle" data-button="grayscale"><span class="fas fa-adjust"></span></div>
+                <div class="icon-button toggle" data-button="color"><span class="fas fa-palette"></span></div>
+                <div class="icon-button" data-button="clear"><span class="fas fa-redo"></span></div>
+                <input type="range" id="scale" min="1" max="100" value="16">
+            </div>
+            <div id="border">
+                <h1>Magic Etch-A-Sketch</h1>
+                <div id="container"></div>
+                <div class="knob-container">
+                    <div class="knob left"></div>
+                    <div class="knob right"></div>
+                </div>
+            </div>
+        </div>
+        <script src="etch-a-sketch.js" type="text/javascript"></script>
+    </body>
+</html>
